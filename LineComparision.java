@@ -23,6 +23,13 @@ public class LineComparision {
             length = String.valueOf(Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2)));
             return length;
        }
+       void comparision(String length1,String length2)
+       {
+           if(length1.equals(length2))
+           System.out.println("Two lines are equal");
+           else System.out.println("Two lines are not equal");
+
+       }
        public static void main(String[] args)
        {
                 System.out.println("Welcome to line comparision computation program");
@@ -33,6 +40,7 @@ public class LineComparision {
                 lc.getPoints();
                 String length2= lc.calLength();
                 System.out.println("Length of second Line is "+length2);
+                lc.comparision(length1,length2);
 
        }
 }
